@@ -155,6 +155,70 @@
     font-size: 28px;
     margin-bottom: 20px;
 }
+
+.resume-section {
+  padding: 50px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.resume-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007BFF; /* Primary button color */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
+.contact-section {
+  padding: 50px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+}
     </style>
 </head>
 <body>        
@@ -267,7 +331,7 @@
             </div>
         
                     <div class="container">
-                        <h1>Personal Upskilling Projects</h1>
+                        <h2>Personal Upskilling Projects</h2>
                             <div class="project-grid"> <!-- Project 1-->
                             <div class="project-card">
                                 <img src="https://via.placeholder.com/300x180" alt="Project 2">
@@ -308,13 +372,24 @@
                     </div>
                 </div>
             </div>  
-            
-    <section id="contact">
-                <div class="container">
-                    <h2>Contact Me</h2>
-                    <p>Feel free to reach out to me via [contact details].</p>
-                </div>
-     </section>
+    <section id="resume" class="resume-section">
+                <h2>Resume</h2>
+                <p>Feel free to download my resume for more details on my experience and projects.</p>
+                <a href="docs\Keziah Gicheha Data Science_Resume.docx" download class="download-button">Download My Resume</a>
+    </section>   
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out via email or connect with me on these platforms:</p>
+     <!-- Social Links -->
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/gichehawambui" target="_blank">LinkedIn</a>
+    <a href="https://github.com/wambuiGicheha" target="_blank">GitHub</a>
+    <a href="https://www.kaggle.com/keziahgicheh" target="_blank">Kaggle</a>
+    <a href="mailto:keziahgicheha@gmail.com">Email</a>
+  </div>
+</section> 
+       
 </body>
 </html>    
    
