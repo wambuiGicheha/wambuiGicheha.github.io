@@ -29,7 +29,7 @@
 
         h1 {
             text-align: center;
-            color: #8e5dff; /* Lavender-inspired deep purple */
+            color: #161414; /* Lavender-inspired deep purple */
             font-size: 2.5rem;
             font-weight: bold;
         }
@@ -104,142 +104,217 @@
         .project-link:hover {
             color: #5d5dff;
         }
+
+
+        .about-me-section {
+  padding: 50px;
+  background-color: #f4f4f4; /* Light grey background */
+  text-align: center; /* Center aligns the section */
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap; /* Makes it responsive */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.about-photo img {
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-text {
+  max-width: 600px; /* Limit text width */
+  text-align: left; /* Align text to the left */
+}
+
+.about-text h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333; /* Darker color for the heading */
+}
+
+.about-text p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #555; /* Slightly muted color for text */
+}
+
+/* Other Sections */
+#services, #contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#services h2, #contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>My Projects</h1>
-
-        <h2>Moringa School Projects</h2>
-
-        <div class="project-grid"> <!-- Project 1-->
-            <div class="project-card">
-                <img src="images\mental-health-unsplash.jpg" alt="Project 2">
-                <div class="project-content">
-                   
-                    <h3 class="project-title">NLP Web-Based App for Depression Detection</h3>
-                    <p><strong>Objective:</strong>  Developed a natural language processing (NLP) model that classifies Reddit posts as either depressive or non-depressive.</p>
-                    <p class="technologies"><strong>Technologies Used:</strong> Python (NLTK, Scikit-learn), Data Visualization (Matplotlib, Seaborn).
-                    HTML/CSS, Streamlit</p>
-                    <p><strong>Features:</strong> 
-                        <li>Input: User submits a Reddit post or text.</li>
-                        <li>Output: Displays whether the text is classified as depressive or non-depressive with a confidence score.</li>
-                        <li>Deployed as a web app for real-time use.</li></p>
-                        
-                        <a class="project-link" href="https://moodlens.streamlit.app/" target="_blank">View Live Demo</a>
-    
-                    <p><strong>Outcome:</strong> Achieved 90% accuracy, showcasing linguistic markers of depressive tendencies.</p>
-                     <a class="project-link" href="https://github.com/wambuiGicheha/NLP-depression-detection" target="_blank">View Project</a>
-
-                </div>
-            </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="images\customer-churn.jpg" alt="customer-churn">
-                <div class="project-content">
-                    <h3 class="project-title">Predicting Customer Churn</h3>
-                    <p><strong>Objective:</strong> Developed models to predict customer churn, enabling proactive retention strategies.</p>
-                    <p class="technologies"><strong>Technologies Used:</strong>Programming Languages: Python
-                        Libraries/Tools: Pandas, Matplotlib, Seaborn, Scikit-learn
-                        Techniques: Logistic Regression, Decision Trees, Exploratory Data Analysis (EDA), Data Cleaning</p>
-                    <p><strong>Outcome:</strong> Achieved 82% model accuracy and identified key churn predictors, improving retention by 25%.</p>
-                    <a class="project-link" href="https://github.com/wambuiGicheha/Customer_churn_prediction" target="_blank">View Project</a>
-                </div>
-            </div>
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="images\house-value-jakub-zerdzicki-dEwvH-LlpWc-unsplash.jpg" alt="customer-churn">
-                <div class="project-content">
-                    <h3 class="project-title">Home Value Predictions</h3>
-                    <p><strong>Objective:</strong> Predict home values in King County based on multiple features, such as size, location, and property age, 
-                        to provide actionable insights into the real estate market.</p>
-                    <p class="technologies"><strong>Technologies Used:</strong> <li>Programming Languages: Python</li>
-                        <li>Libraries/Tools: Pandas, Matplotlib, Seaborn, Scikit-learn</li>
-                        <li>Techniques: Linear Regression, Exploratory Data Analysis (EDA), Data Cleaning</li></p>
-                    <p><strong>Outcome:</strong> Achieved high model accuracy, enabling practical use for real estate investors and stakeholders.</p>
-                    <a class="project-link" href="https://github.com/wambuiGicheha/Home_Value_Predictions" target="_blank">View Project</a>
-                </div>
-            </div>
-
-                        <!-- Project 4 -->
-                        <div class="project-card">
-                            <img src="images\house-value-jakub-zerdzicki-dEwvH-LlpWc-unsplash.jpg" alt="customer-churn">
-                            <div class="project-content">
-                                <h3 class="project-title">Sentiment Analysis of Social Media Posts </h3>
-                                <p><strong>Objective:</strong> Performed sentiment analysis on tweets related to Apple and Google products, 
-                                    classifying user sentiments into positive, negative, or neutral categories using Natural Language Processing (NLP) techniques.
-                                    The goal is to assess public perception of these brands based on social media data.</p>
-                                <p class="technologies"><strong>Technologies Used:</strong> <li>Programming Languages: Python</li>
-                                    <li>Libraries/Tools: Pandas,  Numpy, Scikit-learn, NLTK, TfidfVectorizer, Matplotlib, Seaborn</li>
-                                    <li>Techniques:  Sentiment Analysis, Logistic Regression, Support Vector Machine (SVM), F1-Score Evaluation, Cross-Validation</li></p>
-                                <p><strong>Outcome:</strong>  Based on the analysis, the SVM model is recommended for production use due to its superior overall accuracy 
-                                    and handling of neutral sentiment</p>
-                                <a class="project-link" href="https://github.com/wambuiGicheha/Sentiment-Analysis-NLP" target="_blank">View Project</a>
-                            </div>
+<body>        
+    <!-- About Me Section -->
+    <section id="about-me" class="about-me-section">
+        <div class="container">
+            <div class="about-photo">
+                <img src="images\me.jpeg" alt="Wambui's Photo">
+              </div>
+            <h1>Journey So Far</h1>
+            <p>Hello! I'm Wambui, an aspiring Data Scientist driven by curiosity and a commitment to
+                 continuous learning. Here, you'll find projects showcasing my journey, 
+                 where I apply data science techniques to solve real-world problems. 
+                 I am passionate about turning data into actionable
+                 insights and aim to contribute meaningfully to society through innovative solutions</p>
+        </div>
+    </section>                    
+                
+                
+<div class="container">
+                <h1>My Projects</h1>
+        
+                <h2>Moringa School Projects</h2>
+        
+                    <div class="project-grid"> <!-- Project 1-->
+                    <div class="project-card">
+                        <img src="images\mental-health-unsplash.jpg" alt="Project 2">
+                        <div class="project-content">
+                           
+                            <h3 class="project-title">NLP Web-Based App for Depression Detection</h3>
+                            <p><strong>Objective:</strong>  Developed a natural language processing (NLP) model that classifies Reddit posts as either depressive or non-depressive.</p>
+                            <p class="technologies"><strong>Technologies Used:</strong> Python (NLTK, Scikit-learn), Data Visualization (Matplotlib, Seaborn).
+                            HTML/CSS, Streamlit</p>
+                            <p><strong>Features:</strong> 
+                                <li>Input: User submits a Reddit post or text.</li>
+                                <li>Output: Displays whether the text is classified as depressive or non-depressive with a confidence score.</li>
+                                <li>Deployed as a web app for real-time use.</li></p>
+                                
+                                <a class="project-link" href="https://moodlens.streamlit.app/" target="_blank">View Live Demo</a>
+            
+                            <p><strong>Outcome:</strong> Achieved 90% accuracy, showcasing linguistic markers of depressive tendencies.</p>
+                             <a class="project-link" href="https://github.com/wambuiGicheha/NLP-depression-detection" target="_blank">View Project</a>
+        
                         </div>
+                    </div>
+        
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="images\customer-churn.jpg" alt="customer-churn">
+                        <div class="project-content">
+                            <h3 class="project-title">Predicting Customer Churn</h3>
+                            <p><strong>Objective:</strong> Developed models to predict customer churn, enabling proactive retention strategies.</p>
+                            <p class="technologies"><strong>Technologies Used:</strong>Programming Languages: Python
+                                Libraries/Tools: Pandas, Matplotlib, Seaborn, Scikit-learn
+                                Techniques: Logistic Regression, Decision Trees, Exploratory Data Analysis (EDA), Data Cleaning</p>
+                            <p><strong>Outcome:</strong> Achieved 82% model accuracy and identified key churn predictors, improving retention by 25%.</p>
+                            <a class="project-link" href="https://github.com/wambuiGicheha/Customer_churn_prediction" target="_blank">View Project</a>
+                        </div>
+                    </div>
 
-            <!-- Project 5-->
-            <div class="project-card">
-                <img src="images\movie-kilyan-sockalingum-nW1n9eNHOsc-unsplash.jpg" alt="movie-theatre">
-                <div class="project-content">
-                    <h3 class="project-title">Microsoft Movie Studio</h3>
-                    <p><strong>Objective:</strong>Analyze the Box Office Mojo and IMDB datasets to identify movie genres that perform well at the box 
-                        office, providing actionable recommendations for investment and studio collaborations to increase box office success.</p>
-                    <p class="technologies"><strong>Technologies Used:</strong> <li>Programming Languages: Python</li>
-                        <li>Libraries/Tools: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</li>
-                        <li>Techniques: Data Cleaning, Exploratory Data Analysis (EDA), Data Visualization, Statistical Analysis</li></p>
-                    <p><strong>Outcome:</strong> Provided actionable recommendations for investment in high-performing genres and strategic
-                         collaboration with leading studios to maximize box office success.</p>
-                    <a class="project-link" href="https://github.com/wambuiGicheha/Project1" target="_blank">View Project</a>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="images\twitter.jpg" alt="customer-churn">
+                        <div class="project-content">
+                            <h3 class="project-title">Sentiment Analysis of Social Media Posts </h3>
+                            <p><strong>Objective:</strong> Performed sentiment analysis on tweets related to Apple and Google products, 
+                                classifying user sentiments into positive, negative, or neutral categories using Natural Language Processing (NLP) techniques.
+                                The goal is to assess public perception of these brands based on social media data.</p>
+                            <p class="technologies"><strong>Technologies Used:</strong> <li>Programming Languages: Python</li>
+                                <li>Libraries/Tools: Pandas,  Numpy, Scikit-learn, NLTK, TfidfVectorizer, Matplotlib, Seaborn</li>
+                                <li>Techniques:  Sentiment Analysis, Logistic Regression, Support Vector Machine (SVM), F1-Score Evaluation, Cross-Validation</li></p>
+                            <p><strong>Outcome:</strong>  Based on the analysis, the SVM model is recommended for production use due to its superior overall accuracy 
+                                and handling of neutral sentiment</p>
+                            <a class="project-link" href="https://github.com/wambuiGicheha/Sentiment-Analysis-NLP" target="_blank">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card">
+                        <img src="images\house-value-jakub-zerdzicki-dEwvH-LlpWc-unsplash.jpg" alt="customer-churn">
+                        <div class="project-content">
+                            <h3 class="project-title">Home Value Predictions</h3>
+                            <p><strong>Objective:</strong> Predict home values in King County based on multiple features, such as size, location, and property age, 
+                                to provide actionable insights into the real estate market.</p>
+                            <p class="technologies"><strong>Technologies Used:</strong> <li>Programming Languages: Python</li>
+                                <li>Libraries/Tools: Pandas, Matplotlib, Seaborn, Scikit-learn</li>
+                                <li>Techniques: Linear Regression, Exploratory Data Analysis (EDA), Data Cleaning</li></p>
+                            <p><strong>Outcome:</strong> Achieved high model accuracy, enabling practical use for real estate investors and stakeholders.</p>
+                            <a class="project-link" href="https://github.com/wambuiGicheha/Home_Value_Predictions" target="_blank">View Project</a>
+                        </div>
+                    </div>       
+                                
+        
+                    <!-- Project 5-->
+                    <div class="project-card">
+                        <img src="images\movie-kilyan-sockalingum-nW1n9eNHOsc-unsplash.jpg" alt="movie-theatre">
+                        <div class="project-content">
+                            <h3 class="project-title">Microsoft Movie Studio</h3>
+                            <p><strong>Objective:</strong>Analyze the Box Office Mojo and IMDB datasets to identify movie genres that perform well at the box 
+                                office, providing actionable recommendations for investment and studio collaborations to increase box office success.</p>
+                            <p class="technologies"><strong>Technologies Used:</strong> <li>Programming Languages: Python</li>
+                                <li>Libraries/Tools: Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn</li>
+                                <li>Techniques: Data Cleaning, Exploratory Data Analysis (EDA), Data Visualization, Statistical Analysis</li></p>
+                            <p><strong>Outcome:</strong> Provided actionable recommendations for investment in high-performing genres and strategic
+                                 collaboration with leading studios to maximize box office success.</p>
+                            <a class="project-link" href="https://github.com/wambuiGicheha/Project1" target="_blank">View Project</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <h1>Personal Upskilling Projects</h1>
-        <div class="project-grid"> <!-- Project 1-->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x180" alt="Project 2">
-                <div class="project-content">
-                   
-                    <h3 class="project-title">Project 1</h3>
-                    <p><strong>Objective:</strong>  Developed a natural language processing (NLP) model that classifies Reddit posts as either depressive or non-depressive.</p>
-                    <p class="technologies"><strong>Technologies Used:</strong> Python (NLTK, Scikit-learn), Data Visualization (Matplotlib, Seaborn).
-                    HTML/CSS, Streamlit</p>
-                    <p><strong>Features:</strong> 
-                        <li>Input: User submits a Reddit post or text.</li>
-                        <li>Output: Displays whether the text is classified as depressive or non-depressive with a confidence score.</li>
-                        <li>Deployed as a web app for real-time use.</li></p>
-                        
-                      
-    
-                    <p><strong>Outcome:</strong> Achieved 90% accuracy, showcasing linguistic markers of depressive tendencies.</p>
-                     <a class="project-link" href="https://github.com/wambuiGicheha/NLP-depression-detection" target="_blank">View Project</a>
-
+        
+                    <div class="container">
+                        <h1>Personal Upskilling Projects</h1>
+                            <div class="project-grid"> <!-- Project 1-->
+                            <div class="project-card">
+                                <img src="https://via.placeholder.com/300x180" alt="Project 2">
+                            <div class="project-content">                           
+                            <h3 class="project-title">Project 1</h3>
+                                <p><strong>Objective:</strong>  Developed a natural language processing (NLP) model that classifies Reddit posts as either depressive or non-depressive.</p>
+                                <p class="technologies"><strong>Technologies Used:</strong> Python (NLTK, Scikit-learn), Data Visualization (Matplotlib, Seaborn).
+                                    HTML/CSS, Streamlit</p>
+                                <p><strong>Features:</strong> 
+                                    <li>Input: User submits a Reddit post or text.</li>
+                                    <li>Output: Displays whether the text is classified as depressive or non-depressive with a confidence score.</li>
+                                    <li>Deployed as a web app for real-time use.</li></p>
+                                                         
+            
+                            <p><strong>Outcome:</strong> Achieved 90% accuracy, showcasing linguistic markers of depressive tendencies.</p>
+                             <a class="project-link" href="https://github.com/wambuiGicheha/NLP-depression-detection" target="_blank">View Project</a>
+        
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x180" alt="Project 2">
+                        <div class="project-content">
+                            <h3 class="project-title">Project 2</h3>
+                            <p class="project-description">Built a predictive model to classify Reddit posts as depressive or non-depressive using NLP techniques.</p>
+                            <a class="project-link" href="https://github.com/yourusername/nlp-mental-health" target="_blank">View Project</a>
+                        </div>
+                    </div>
+        
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/300x180" alt="Project 3">
+                        <div class="project-content">
+                            <h3 class="project-title">Project 3</h3>
+                            <p class="project-description">Explored movie trends to provide actionable insights for Microsoft's new movie studio initiative.</p>
+                            <a class="project-link" href="https://github.com/yourusername/box-office-insights" target="_blank">View Project</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x180" alt="Project 2">
-                <div class="project-content">
-                    <h3 class="project-title">Project 2</h3>
-                    <p class="project-description">Built a predictive model to classify Reddit posts as depressive or non-depressive using NLP techniques.</p>
-                    <a class="project-link" href="https://github.com/yourusername/nlp-mental-health" target="_blank">View Project</a>
+            </div>  
+            
+    <section id="contact">
+                <div class="container">
+                    <h2>Contact Me</h2>
+                    <p>Feel free to reach out to me via [contact details].</p>
                 </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="https://via.placeholder.com/300x180" alt="Project 3">
-                <div class="project-content">
-                    <h3 class="project-title">Project 3</h3>
-                    <p class="project-description">Explored movie trends to provide actionable insights for Microsoft's new movie studio initiative.</p>
-                    <a class="project-link" href="https://github.com/yourusername/box-office-insights" target="_blank">View Project</a>
-                </div>
-            </div>
-        </div>
-    </div>
+     </section>
 </body>
-</html>
+</html>    
+   
